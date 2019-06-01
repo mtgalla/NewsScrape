@@ -37,7 +37,7 @@ mongoose.connect(MONGODB_URI,{ useNewUrlParser: true });
 // Routes
 
 app.get("/", function(req, res) {
-  res.json(path.join(__dirname, "public/index.html"));
+  res.redirect("public/index.html")
 });
 
 // A GET route for scraping the echoJS website
